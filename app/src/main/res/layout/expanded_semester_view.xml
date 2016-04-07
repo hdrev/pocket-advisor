@@ -33,7 +33,7 @@
                     android:paddingLeft="10dp"
                     android:paddingRight="80dp"
                     android:text="Spring 2016"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="40dp"
                     android:background="@drawable/textview_border"
                     android:textStyle="bold"/>
@@ -43,7 +43,7 @@
                     android:layout_height="match_parent"
                     android:padding="10dp"
                     android:text="15"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="40dp"
                     android:background="@drawable/textview_border"/>
 
@@ -60,7 +60,7 @@
                     android:text="A"
                     android:textSize="30dp"
                     android:padding="5dp"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:background="@drawable/textview_border"/>
 
                 <TextView
@@ -68,7 +68,7 @@
                     android:layout_height="match_parent"
 
                     android:text="CS 2413"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="35dp"
                     android:paddingTop="5dp"
                     android:paddingLeft="5dp"
@@ -80,7 +80,7 @@
                     android:layout_height="match_parent"
                     android:padding="10dp"
                     android:text="4 "
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="30dp"
                     android:background="@drawable/textview_border"
                     android:gravity="right"/>
@@ -98,7 +98,7 @@
                     android:layout_height="wrap_content"
 
                     android:text="Data Structures"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="30dp"
                     android:padding="5dp"
                     android:gravity="center" />
@@ -108,7 +108,7 @@
                     android:layout_height="wrap_content"
 
                     android:text="Prerequisite: CS 1412"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="25dp"
                     android:padding="5dp"/>
             </LinearLayout>
@@ -125,7 +125,7 @@
                     android:text="B"
                     android:textSize="30dp"
                     android:padding="5dp"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:background="@drawable/textview_border"/>
 
                 <TextView
@@ -133,7 +133,7 @@
                     android:layout_height="match_parent"
 
                     android:text="ECE 3302"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="35dp"
                     android:paddingTop="5dp"
                     android:paddingBottom="2dp"
@@ -146,7 +146,7 @@
                     android:layout_height="match_parent"
                     android:padding="10dp"
                     android:text="3"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="30dp"
                     android:background="@drawable/textview_border"/>
 
@@ -163,7 +163,7 @@
                     android:layout_height="wrap_content"
 
                     android:text="Fundamentals of Electrical Engineering"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="30dp"
                     android:padding="5dp"
                     android:gravity="center" />
@@ -173,7 +173,7 @@
                     android:layout_height="wrap_content"
 
                     android:text="Prerequisites: 2.5 TTU GPA; C or better in MATH 1452, majors only"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="25dp"/>
             </LinearLayout>
 
@@ -189,7 +189,7 @@
                     android:text="B"
                     android:textSize="30dp"
                     android:padding="5dp"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:background="@drawable/textview_border"/>
 
                 <TextView
@@ -197,7 +197,7 @@
                     android:layout_height="match_parent"
 
                     android:text="ECE 3362"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="35dp"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
@@ -210,7 +210,7 @@
                     android:layout_height="match_parent"
                     android:padding="10dp"
                     android:text="3"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="30dp"
                     android:background="@drawable/textview_border"/>
 
@@ -229,7 +229,7 @@
                     android:layout_height="wrap_content"
 
                     android:text="Microcontrollers"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="30dp"
                     android:padding="5dp"
                     android:gravity="center" />
@@ -239,7 +239,7 @@
                     android:layout_height="wrap_content"
 
                     android:text="Prerequisite: 2.5 TTU GPA; C or better in ECE 1305 or CS 1412 and ECE 2372"
-                    android:textColor="@color/colorTransparent"
+                    android:textColor="@color/colorBlack"
                     android:textSize="25dp"/>
             </LinearLayout>
 
