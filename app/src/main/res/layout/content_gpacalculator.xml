@@ -17,9 +17,8 @@
         android:layout_height="wrap_content"
         android:text="Add Course"
         android:id="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -38,9 +37,20 @@
         android:inputType="text"
         android:ems="5"
         android:id="@+id/editText2"
+        android:hint="Letter Grade"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/editText"
-        android:layout_toEndOf="@+id/editText"
-        android:hint="Letter Grade"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="4"
+        android:id="@+id/editText3"
+        android:hint="Hours"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
 
 </RelativeLayout>
