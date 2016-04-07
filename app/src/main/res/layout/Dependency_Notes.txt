@@ -1,0 +1,3 @@
+Note:
+
+The Expanded_Semester_View.xml requires the "drawable" folder with the file "textview_border.xml".
