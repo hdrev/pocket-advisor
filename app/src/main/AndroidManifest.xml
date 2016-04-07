@@ -24,6 +24,7 @@
         </activity>
         <activity android:name=".SemesterActivity"></activity>
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".GPACalculator"></activity>
     </application>
 
 </manifest>

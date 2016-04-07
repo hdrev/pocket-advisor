@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.sestens.pocket_advisor;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
