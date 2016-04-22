@@ -30,12 +30,13 @@ public class MainActivity extends android.app.Activity {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         if (item.getItemId() == R.id.gpa_calculator) {
-                            //Toast.makeText(MainActivity.this, "GPA Calc",Toast.LENGTH_LONG).show();
+                            Toast.makeText(MainActivity.this, "GPA Calculator",Toast.LENGTH_LONG).show();
                             Intent intent = new Intent("com.example.sestens.pocket_advisor.GPACalculator");
                             startActivity(intent);
                         }
                         if (item.getItemId() == R.id.log_out) {
-                            Toast.makeText(MainActivity.this, "Logging out", Toast.LENGTH_LONG).show();
+                            Toast.makeText(MainActivity.this, "Logged Out", Toast.LENGTH_LONG).show();
+                            finish();
                         }
                         return false;
                     }
