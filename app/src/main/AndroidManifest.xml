@@ -24,7 +24,16 @@
         </activity>
         <activity android:name=".SemesterActivity"></activity>
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".GPACalculator"></activity>
+        <activity
+            android:name=".GPACalculator"
+            android:label="@string/gpa_calculator_label">
+            <intent-filter>
+                <action android:name="com.example.test.GPACalculator" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+          >
+        </activity>
     </application>
 
 </manifest>

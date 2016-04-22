@@ -1,22 +1,14 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.test.MainActivity">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="Settings"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_logout"
-        android:orderInCategory="101"
-        android:title="Logout"
-        app:showAsAction="never" />
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/action_calculator"
-        android:orderInCategory="0"
-        android:title="GPA Calculator"
-        app:showAsAction="never"/>
+        android:id="@+id/gpa_calculator"
+        android:title="GPA Calculator">
+    </item>
 
+
+    <item
+        android:id="@+id/log_out"
+        android:title="Log Out">
+    </item>>
 </menu>
