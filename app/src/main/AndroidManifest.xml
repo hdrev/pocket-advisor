@@ -22,18 +22,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SemesterActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".SemesterActivity">
+            <intent-filter>
+                <action android:name="com.example.sestens.pocket_advisor.SemesterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="com.example.sestens.pocket_advisor.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".GPACalculator"
             android:label="@string/gpa_calculator_label">
             <intent-filter>
-                <action android:name="com.example.test.GPACalculator" />
+                <action android:name="com.example.sestens.pocket_advisor.GPACalculator" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
           >
         </activity>
+
     </application>
 
 </manifest>
