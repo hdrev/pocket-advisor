@@ -6,9 +6,19 @@
         android:title="GPA Calculator">
     </item>
 
-
     <item
         android:id="@+id/log_out"
         android:title="Log Out">
-    </item>>
+    </item>
+
+    <item
+        android:id="@+id/degree1"
+        android:title="Degree Plan 1">
+    </item>
+
+    <item
+        android:id="@+id/degree2"
+        android:title="Degree Plan 2">
+    </item>
+
 </menu>

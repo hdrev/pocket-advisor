@@ -38,7 +38,17 @@ public class MainActivity extends android.app.Activity {
                             Toast.makeText(MainActivity.this, "Logged Out", Toast.LENGTH_LONG).show();
                             finish();
                         }
-                        return false;
+                        if (item.getItemId() == R.id.degree1) {
+                            Toast.makeText(MainActivity.this, "Degree Plan 1", Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent("com.example.sestens.pocket_advisor.SemesterActivity");
+                            startActivity(intent);
+                        }
+                        if (item.getItemId() == R.id.degree2){
+                            Toast.makeText(MainActivity.this, "Degree Plan 2", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent("com.example.sestens.pocket_advisor.SemesterActivity");
+                            startActivity(intent);
+                        }
+                            return false;
                     }
                 }
         );
