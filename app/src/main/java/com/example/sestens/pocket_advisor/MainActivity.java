@@ -31,7 +31,7 @@ public class MainActivity extends android.app.Activity {
                     public boolean onMenuItemClick(MenuItem item) {
                         if (item.getItemId() == R.id.gpa_calculator) {
                             Toast.makeText(MainActivity.this, "GPA Calculator",Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent("com.example.sestens.pocket_advisor.GPACalculator");
+                            Intent intent = new Intent("com.example.sestens.pocket_advisor.GPACalculatorActivity");
                             startActivity(intent);
                         }
                         if (item.getItemId() == R.id.log_out) {
