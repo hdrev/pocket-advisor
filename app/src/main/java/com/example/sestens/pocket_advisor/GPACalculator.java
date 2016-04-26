@@ -1,36 +1,39 @@
 package com.example.sestens.pocket_advisor;
 
-
 public class GPACalculator {
     private int totalHours = 0;
-    private double gpa = 0;
+    private double totalGradePoints = 0;
 
 
     public double getGpa() {
-        return gpa;
+        return this.totalGradePoints/this.totalHours;
     }
 
-    public int getTotalhours() {
+    public int getTotalHours() {
         return totalHours;
+    }
+
+    public double getTotalGradePoints(){
+        return totalGradePoints;
     }
 
     public void addCourse(int hours, char grade) {
         grade = Character.toUpperCase(grade);
         this.totalHours += hours;
         if(grade == 'A') {
-            this.gpa += 4.0;
+            this.totalGradePoints += hours*4.0;
         }
         else if (grade == 'B') {
-            this.gpa += 3.0;
+            this.totalGradePoints += hours*3.0;
         }
         else if (grade == 'C') {
-            this.gpa += 2.0;
+            this.totalGradePoints += hours*2.0;
         }
         else if (grade == 'D') {
-            this.gpa += 1.0;
+            this.totalGradePoints += hours*1.0;
         }
         else if (grade == 'F'){
-            this.gpa += 0.0;
+            this.totalGradePoints += hours*0.0;
         }
 
     }
