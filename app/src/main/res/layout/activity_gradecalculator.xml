@@ -43,7 +43,8 @@
         android:id="@+id/percentFinalGrade"
         android:layout_alignTop="@+id/percentGradeText"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:hint="out of 100" />
 
     <TextView
         android:layout_width="wrap_content"
