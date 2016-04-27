@@ -48,6 +48,12 @@ public class MainActivity extends android.app.Activity {
                             Intent intent = new Intent("com.example.sestens.pocket_advisor.SemesterActivity");
                             startActivity(intent);
                         }
+                        if (item.getItemId() == R.id.grade_calculator) {
+                            Toast.makeText(MainActivity.this, "Grade Calculator", Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent("com.example.sestens.pocket_advisor.GradeCalculatorActivity");
+                            startActivity(intent);
+                        }
+
                             return false;
                     }
                 }

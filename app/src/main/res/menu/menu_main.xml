@@ -7,8 +7,8 @@
     </item>
 
     <item
-        android:id="@+id/log_out"
-        android:title="Log Out">
+        android:id="@+id/grade_calculator"
+        android:title="Grade Calculator">
     </item>
 
     <item
@@ -20,5 +20,12 @@
         android:id="@+id/degree2"
         android:title="Degree Plan 2">
     </item>
+
+    <item
+        android:id="@+id/log_out"
+        android:title="Log Out">
+    </item>
+
+
 
 </menu>

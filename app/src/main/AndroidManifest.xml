@@ -47,8 +47,17 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-          >
         </activity>
+        <activity
+            android:name=".GradeCalculatorActivity"
+            android:label="Grade Calculator">
+            <intent-filter>
+                <action android:name="com.example.sestens.pocket_advisor.GradeCalculatorActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
 
     </application>
 
