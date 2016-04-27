@@ -17,22 +17,21 @@ public class GPACalculator {
         return totalGradePoints;
     }
 
-    public void addCourse(int hours, char grade) {
-        grade = Character.toUpperCase(grade);
+    public void addCourse(int hours, double grade) {
         this.totalHours += hours;
-        if(grade == 'A') {
+        if(grade >= 90) {
             this.totalGradePoints += hours*4.0;
         }
-        else if (grade == 'B') {
+        else if (grade >= 80 && grade < 90) {
             this.totalGradePoints += hours*3.0;
         }
-        else if (grade == 'C') {
+        else if (grade >= 70 && grade < 80) {
             this.totalGradePoints += hours*2.0;
         }
-        else if (grade == 'D') {
+        else if (grade >= 60 && grade < 70) {
             this.totalGradePoints += hours*1.0;
         }
-        else if (grade == 'F'){
+        else if (grade < 60){
             this.totalGradePoints += hours*0.0;
         }
 

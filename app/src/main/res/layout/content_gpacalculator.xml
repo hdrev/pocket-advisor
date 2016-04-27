@@ -53,6 +53,8 @@
         android:id="@+id/currentGpa"
         android:layout_alignTop="@+id/currentGpaText"
         android:layout_alignLeft="@+id/currentHoursText"
+        android:layout_toRightOf="@+id/currentGpaText"
+        android:layout_toEndOf="@+id/currentGpaText"
         android:layout_alignStart="@+id/currentHours" />
 
     <EditText
@@ -80,8 +82,8 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="5"
-        android:id="@+id/courseGpa"
-        android:hint="GPA"
+        android:id="@+id/courseGrade"
+        android:hint="Grade %"
         android:layout_alignTop="@+id/courseHours"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -91,7 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Course"
-        android:id="@+id/addCourse"
+        android:id="@+id/addCourseButton"
         android:layout_below="@+id/courseHours"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
