@@ -14,6 +14,7 @@ public class GradeCalculatorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gradecalculator);
 
+        final GradeCalculator calc = new GradeCalculator();
         final TextView totalPercent = (TextView) findViewById(R.id.totalPercent);
         final TextView finalGrade = (TextView) findViewById(R.id.finalGrade);
         final EditText gradeReceived = (EditText) findViewById(R.id.gradeReceived);
@@ -28,6 +29,7 @@ public class GradeCalculatorActivity extends AppCompatActivity {
                 int percentFinalGradeInt = Integer.parseInt(percentFinalGradeString);
                 double gradeReceivedDouble = Double.parseDouble(gradeReceivedString);
 
+                calc.addGrade(gradeReceivedDouble, percentFinalGradeInt);
                // finalGrade.setText("TEST");
             }
         });
