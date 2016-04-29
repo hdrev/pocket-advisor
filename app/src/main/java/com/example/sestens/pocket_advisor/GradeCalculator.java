@@ -14,11 +14,7 @@ public class GradeCalculator {
     }
 
     public void addGrade(double grade, int percentage){
-        //grade=grade/100;
-        percentage = percentage/100;
-        grade = grade*percentage;
-        this.currentPercentage += percentage;
-        //this.currentGrade = ;
-        //this.finalGrade = ;
+        currentPercentage += percentage;
+        finalGrade += (grade*percentage)/100;
     }
 }

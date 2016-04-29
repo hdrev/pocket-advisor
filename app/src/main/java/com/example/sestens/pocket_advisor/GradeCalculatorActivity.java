@@ -30,7 +30,8 @@ public class GradeCalculatorActivity extends AppCompatActivity {
                 double gradeReceivedDouble = Double.parseDouble(gradeReceivedString);
 
                 calc.addGrade(gradeReceivedDouble, percentFinalGradeInt);
-               // finalGrade.setText("TEST");
+                finalGrade.setText(String.valueOf(calc.getFinalGrade()));
+                totalPercent.setText(String.valueOf(calc.getCurrentPercentage()));
             }
         });
 
