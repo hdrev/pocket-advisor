@@ -9,7 +9,7 @@ public class MainActivity extends android.app.Activity {
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_menu);             //Display Main Menu (Degree Plans)
+        setContentView(R.layout.db_info);             //Display Main Menu (Degree Plans) . actually changing this to dbinfo to iterate
     }
 
 
