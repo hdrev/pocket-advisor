@@ -32,7 +32,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="90dp"
-        android:layout_marginEnd="90dp" />
+        android:layout_marginEnd="90dp"
+        android:singleLine="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,7 +56,8 @@
         android:layout_alignLeft="@+id/currentHoursText"
         android:layout_toRightOf="@+id/currentGpaText"
         android:layout_toEndOf="@+id/currentGpaText"
-        android:layout_alignStart="@+id/currentHours" />
+        android:layout_alignStart="@+id/currentHours"
+        android:singleLine="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -65,7 +67,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="35dp"
-        android:hint="Course Name" />
+        android:hint="Course Name"
+        android:singleLine="true"
+        />
 
     <EditText
         android:layout_width="wrap_content"
@@ -96,4 +100,19 @@
         android:id="@+id/addCourseButton"
         android:layout_below="@+id/courseHours"
         android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addCourseButton">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/coursesList"
+            />
+
+    </ScrollView>
 </RelativeLayout>

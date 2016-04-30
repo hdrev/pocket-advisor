@@ -64,7 +64,8 @@
         android:id="@+id/totalPercent"
         android:layout_alignTop="@+id/totalPercentText"
         android:layout_toRightOf="@+id/totalPercentText"
-        android:layout_toEndOf="@+id/totalPercentText" />
+        android:layout_toEndOf="@+id/totalPercentText"
+        android:singleLine="true"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -72,7 +73,8 @@
         android:text="Add Grade"
         android:id="@+id/addGradeButton"
         android:layout_below="@+id/percentFinalGrade"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -93,6 +95,7 @@
         android:id="@+id/finalGrade"
         android:layout_alignTop="@+id/finalGradeText"
         android:layout_toRightOf="@+id/totalPercentText"
-        android:layout_toEndOf="@+id/totalPercentText" />
+        android:layout_toEndOf="@+id/totalPercentText"
+        android:singleLine="true"/>
 
 </RelativeLayout>

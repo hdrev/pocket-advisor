@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class GradeCalculatorActivity extends AppCompatActivity {
     @Override
@@ -26,12 +27,22 @@ public class GradeCalculatorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String gradeReceivedString = gradeReceived.getText().toString();
                 String percentFinalGradeString = percentFinalGrade.getText().toString();
-                int percentFinalGradeInt = Integer.parseInt(percentFinalGradeString);
-                double gradeReceivedDouble = Double.parseDouble(gradeReceivedString);
+                if(gradeReceivedString.matches("")){
+                    Toast.makeText(GradeCalculatorActivity.this, "You did not enter a grade.", Toast.LENGTH_SHORT).show();
+                }
+                else if(percentFinalGradeString.matches("")){
+                    Toast.makeText(GradeCalculatorActivity.this, "You did not enter a percent.", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    int percentFinalGradeInt = Integer.parseInt(percentFinalGradeString);
+                    double gradeReceivedDouble = Double.parseDouble(gradeReceivedString);
+                    calc.addGrade(gradeReceivedDouble, percentFinalGradeInt);
+                    finalGrade.setText(String.valueOf(calc.getFinalGrade()));
+                    totalPercent.setText(String.valueOf(calc.getCurrentPercentage()));
+                    gradeReceived.setText("");
+                    percentFinalGrade.setText("");
+                }
 
-                calc.addGrade(gradeReceivedDouble, percentFinalGradeInt);
-                finalGrade.setText(String.valueOf(calc.getFinalGrade()));
-                totalPercent.setText(String.valueOf(calc.getCurrentPercentage()));
             }
         });
 
