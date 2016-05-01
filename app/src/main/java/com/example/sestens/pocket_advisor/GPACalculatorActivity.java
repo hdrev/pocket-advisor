@@ -43,11 +43,14 @@ public class GPACalculatorActivity extends AppCompatActivity {
                 else if(gpaString.matches("")){
                     Toast.makeText(GPACalculatorActivity.this, "You did not enter a course grade.", Toast.LENGTH_SHORT).show();
                 }
+                else if(!gpaString.matches("A")&&!gpaString.matches("B")&&!gpaString.matches("C")&&!gpaString.matches("D")&&!gpaString.matches("F")){
+                    Toast.makeText(GPACalculatorActivity.this, "Please enter a valid letter grade.", Toast.LENGTH_SHORT).show();
+                }
                 else{
                     int hoursInt = Integer.parseInt(hoursString);
-                    double gpaDouble = Double.parseDouble(gpaString);
-                    calc.addCourse(hoursInt, gpaString.toUpperCase());
-                    coursesList.append(courseString + "\n\n");
+                    char gpaChar = gpaString.charAt(0);
+                    calc.addCourse(hoursInt, gpaChar);
+                    coursesList.append(courseString + "\n"+gpaString+"\n"+hoursString+" hours\n\n");
 
                     //updates total gpa and total hours
                     current_hours.setText("" + calc.getTotalHours());
