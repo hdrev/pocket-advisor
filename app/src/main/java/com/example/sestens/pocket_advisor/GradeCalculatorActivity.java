@@ -20,7 +20,9 @@ public class GradeCalculatorActivity extends AppCompatActivity {
         final TextView finalGrade = (TextView) findViewById(R.id.finalGrade);
         final EditText gradeReceived = (EditText) findViewById(R.id.gradeReceived);
         final EditText percentFinalGrade = (EditText) findViewById(R.id.percentFinalGrade);
+        final TextView gradeList = (TextView) findViewById(R.id.gradeList);
         Button addGradeButton = (Button) findViewById(R.id.addGradeButton);
+        gradeList.setText("List of Grades:\n");
 
         addGradeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,7 @@ public class GradeCalculatorActivity extends AppCompatActivity {
                     calc.addGrade(gradeReceivedDouble, percentFinalGradeInt);
                     finalGrade.setText(String.valueOf(calc.getFinalGrade()));
                     totalPercent.setText(String.valueOf(calc.getCurrentPercentage()));
+                    gradeList.append("\nGrade: "+gradeReceivedString+"\nPercent of Total: "+percentFinalGradeString+"\n\n");
                     gradeReceived.setText("");
                     percentFinalGrade.setText("");
                 }

@@ -98,4 +98,19 @@
         android:layout_toEndOf="@+id/totalPercentText"
         android:singleLine="true"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/finalGrade">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/gradeList"
+            />
+
+    </ScrollView>
+
 </RelativeLayout>
