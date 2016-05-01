@@ -46,7 +46,7 @@ public class GPACalculatorActivity extends AppCompatActivity {
                 else{
                     int hoursInt = Integer.parseInt(hoursString);
                     double gpaDouble = Double.parseDouble(gpaString);
-                    calc.addCourse(hoursInt, gpaDouble);
+                    calc.addCourse(hoursInt, gpaString.toUpperCase());
                     coursesList.append(courseString + "\n\n");
 
                     //updates total gpa and total hours
