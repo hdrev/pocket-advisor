@@ -84,13 +84,14 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
         android:ems="5"
         android:id="@+id/courseGrade"
-        android:hint="Grade %"
+        android:hint="Letter Grade"
         android:layout_alignTop="@+id/courseHours"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:inputType="textCapCharacters"
+        android:maxLength="1"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
