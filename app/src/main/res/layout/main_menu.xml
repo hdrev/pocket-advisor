@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.example.sestens.pocket_advisor.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,18 +31,19 @@
             android:id="@+id/imageView"
             android:contentDescription="degree_plan1"
             android:adjustViewBounds="true"
-            android:src="@drawable/degreeplans4"
+            android:src="@drawable/degreeplan1"
             android:layout_below="@+id/textView2"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="46dp" />
+            android:layout_marginTop="46dp"
+            android:onClick="onClickDegreePlan" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView2"
             android:adjustViewBounds="true"
-            android:src="@drawable/degreeplan5"
+            android:src="@drawable/degreeplan2"
             android:layout_below="@+id/imageView"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -63,6 +66,17 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_action_popmenu"
+            android:onClick="showPopUp"
+            />
 
     </RelativeLayout>
 
