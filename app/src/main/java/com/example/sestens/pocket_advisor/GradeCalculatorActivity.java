@@ -35,6 +35,15 @@ public class GradeCalculatorActivity extends AppCompatActivity {
                 else if(percentFinalGradeString.matches("")){
                     Toast.makeText(GradeCalculatorActivity.this, "You did not enter a percent.", Toast.LENGTH_SHORT).show();
                 }
+                else if(Integer.parseInt(percentFinalGradeString)<1||Integer.parseInt(percentFinalGradeString)>100){
+                    Toast.makeText(GradeCalculatorActivity.this, "You entered an invalid percentage.",Toast.LENGTH_SHORT).show();
+                }
+                else if(calc.getCurrentPercentage()+Integer.parseInt(percentFinalGradeString) >100){
+                    Toast.makeText(GradeCalculatorActivity.this, "You entered a percent that puts the total percent over 100.",Toast.LENGTH_SHORT).show();
+                }
+                else if(Double.parseDouble(gradeReceivedString)<1||Double.parseDouble(gradeReceivedString)>100){
+                    Toast.makeText(GradeCalculatorActivity.this, "You entered an invalid grade.",Toast.LENGTH_SHORT).show();
+                }
                 else{
                     int percentFinalGradeInt = Integer.parseInt(percentFinalGradeString);
                     double gradeReceivedDouble = Double.parseDouble(gradeReceivedString);
